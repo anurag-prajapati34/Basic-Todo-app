@@ -1,0 +1,150 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.hide{
+    display: none;
+}
+
+
+/*------------------------designing to do app --------------*/
+.todoApp{
+    width: 485px;
+    height: 526px;
+    background-color: #788EFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoAppContentContainer{
+    height: 100%;
+    width: 100%;
+    padding: 36px 39px;
+    
+}
+
+.todoAppContentContainer .inputBox{
+width: 302px;
+height: 59px;
+background-color: #E5E6EC;
+color:black;
+box-shadow: 0 4px 4px rgba(00, 00, 00, 0.25);
+border:none;
+outline: none;
+font-size: 16px;
+padding:0 20px;
+letter-spacing: 2px;
+
+
+
+}
+
+
+
+.addBtn{
+    background-color: #000D50;
+    height: 59px;
+    width: 88px;
+    color:#E5E6EC;
+    font-size: 16px;
+    font-weight:600;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 4px rgba(00, 00, 00, 0.25);
+    margin-left: 17px;
+}
+
+.taskListContainer{
+    height: 90%;
+    width: 100%;
+   margin:9px 0;
+   overflow:auto;
+   
+ 
+
+
+
+
+}
+
+.taskListContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.taskListContainer .headings{
+    color:#000D50;
+    font-size: 16px;
+    font-weight: 500;
+ 
+}
+
+.task{
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+ padding:17px;
+    align-items: center;
+    background-color:rgba(179,186,226,0.6);
+    margin:9px 0;
+    box-shadow: 0 4px 4px rgba(00, 00, 00, 0.25);
+
+}
+.completedTask{
+    background-color:rgba(179,186,226,0.2);
+
+}
+.task h1{
+    width: 304px;
+    height: 100%;
+   margin: 0;
+    font-size: 19px;
+    font-weight: normal;
+   white-space:nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+  
+
+
+}
+
+.task .icon{
+  font-size: 19px;
+  color: #000D50;
+  cursor: pointer;
+  margin:0 7px;
+
+
+}
+
+.task .icon:hover{
+    transform: scale(1.2);
+   
+    transition: 0.3s ease-in-out;
+    
+    
+}
+
+
+
+.complete{
+    text-decoration: line-through #000D50;
+    
+
+}
+
+.noTasksBox{
+    font-size: 30px;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
